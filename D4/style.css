@@ -56,7 +56,7 @@ form>button{
 
 .user{
     border: 1px solid white;
-    min-width: 20%;
+    width: 30%;
     min-height: 15rem;
     overflow: hidden;
     border-radius: 1rem;
