@@ -12,7 +12,7 @@ body {
 }
 
 form{
-    border: 1px solid whitesmoke;
+    border: 1px solid rgba(245, 245, 245, 0.39);
     width: 40rem;
     height: 20rem;
     display: flex;
@@ -22,6 +22,9 @@ form{
     gap: 1.5rem;
     border-radius: 1rem;
     margin: 1rem 2rem;
+    transform: translate(50%);
+    background-color: #1581a238;
+    box-shadow: 0 0 50px 4px rgba(127, 154, 155, 0.084);
 }
 form input{
     width: 70%;
