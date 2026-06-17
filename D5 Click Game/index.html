@@ -1,16 +1,32 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Click Game</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h3>Timer: <span id="timer">0</span></h3>
-    <div class="main">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="top">
+      <h3>Timer: <span id="timer">0</span></h3>
+      <h3>Score: <span id="score">0</span></h3>
     </div>
+    <div class="main"></div>
     <button>Start</button>
+    <div class="overlay">
+        <h1 id="overlay-timeout">3</h1>
+      <table border="1">
+        <tr>
+          <th>Time</th>
+          <td id="overlay-time">0</td>
+        </tr>
+        <tr>
+          <th>Score</th>
+          <td id="overlay-score">0</td>
+        </tr>
+      </table>
+      <h1 id="game-over">Game Over</h1>
+    </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
