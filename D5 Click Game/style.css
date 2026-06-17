@@ -31,7 +31,7 @@ body {
     position: relative;
 }
 .box{
-    height: 2rem;
+    height: 4rem;
     aspect-ratio: 1/1;
     border-radius: .5rem;
     background-color: rgb(39, 216, 54);
