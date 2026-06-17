@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .5rem;
+    position: relative;
+}
+
+nav {
+    width: 100%;
+    height: 10%;
+    background-color: rgb(84, 178, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 1rem;
+    color: white;
+}
+
+nav>h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    user-select: none;
+}
+
+nav>button {
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: 1rem;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+#hero-heading {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    text-align: start;
+    /* background-color: red; */
+    align-self: self-start;
+}
+
+#products {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.product {
+    width: clamp(18rem, 22vw, 24rem);
+    height: clamp(20rem, 25vw, 25rem);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-color: antiquewhite;
+    color: black;
+    /* border: 1px solid rgba(0, 0, 0, 0.08); */
+    box-shadow:
+        0 1px 2px rgba(0, 0, 0, .08),
+        0 8px 24px rgba(0, 0, 0, .12);
+    cursor: pointer;
+}
+
+
+.img {
+    width: 100%;
+    overflow: hidden;
+    height: 60%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+
+}
+
+img:hover {
+    transform: scale(1.2);
+}
+
+.description {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+}
+
+.description h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.description p:nth-child(2) {
+    font-size: .8rem;
+    font-weight: 500;
+    color: rgb(65, 65, 65);
+}
+
+.description p:nth-child(3) {
+    font-size: .7rem;
+    font-weight: 700;
+    color: rgb(31, 31, 31);
+}
+
+.btm {
+    width: 100%;
+    height: 12%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem .5rem 1rem;
+}
+
+.btm button {
+    padding: .1rem 1rem;
+    text-align: center;
+    font-size: .7rem;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+.btm button:nth-child(1) {
+    background-color: goldenrod;
+}
+
+.btm button:nth-child(2) {
+    background-color: rgb(218, 60, 32);
+}
+
+.form-section {
+    display: none;
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    background: #53535357;
+}
+
+
+.product-form {
+    width: min(90%, 450px);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    background: rgba(71, 71, 71, 0.486);
+    backdrop-filter: blur(2px);
+    border-radius: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.06),
+        0 12px 32px rgba(0, 0, 0, 0.08);
+}
+
+.product-form>h3 {
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.product-form h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.product-form input,
+.product-form textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #b9b9c7;
+    border-radius: 0.75rem;
+    outline: none;
+    font-size: 1rem;
+    transition: all .3s ease;
+}
+
+.product-form textarea {
+    min-height: 120px;
+    resize: none;
+}
+
+.product-form input:focus,
+.product-form textarea:focus {
+    border-color: #2a2857;
+    box-shadow:
+        0 0 0 4px rgba(42, 40, 87, .08);
+}
+
+.product-form button {
+    padding: 1rem;
+
+    border: none;
+
+    border-radius: 999px;
+
+    background: #4a478d;
+
+    color: rgb(255, 255, 255);
+
+    cursor: pointer;
+
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all .3s ease;
+}
+
+.product-form button:hover {
+    transform: translateY(-2px);
+
+    background: #3d3980;
+}
