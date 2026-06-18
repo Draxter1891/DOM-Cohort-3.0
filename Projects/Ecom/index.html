@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ecom | CRUD</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://freepngimg.com/save/webp/16801-shopping-bag-png-pic
+"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <main>
@@ -35,17 +41,36 @@
         </div> -->
       </section>
       <section class="form-section">
-          <form class="product-form">
-            <h3>x</h3>
+        <form class="product-form">
+          <h3>x</h3>
           <h2>Add Product</h2>
 
-          <input type="text" id="product-name" placeholder="Enter product name..." />
+          <input
+            required
+            type="text"
+            id="product-name"
+            placeholder="Enter product name..."
+          />
 
-          <textarea id="product-desc" placeholder="Enter product description..."></textarea>
+          <textarea
+            required
+            id="product-desc"
+            placeholder="Enter product description..."
+          ></textarea>
 
-          <input type="number" id="product-price" placeholder="Enter product price..." />
+          <input
+            required
+            type="number"
+            id="product-price"
+            placeholder="Enter product price..."
+          />
 
-          <input type="url" id="product-img" placeholder="Enter product image URL..." />
+          <input
+            required
+            type="url"
+            id="product-img"
+            placeholder="Enter product image URL..."
+          />
 
           <button type="submit" id="product-add-btn">Add Product</button>
         </form>
